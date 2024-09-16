@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>HTML5 Input Types</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                font-size: medium;
+                color: blueviolet;
+                background-color: black;
+                /* text-align: center; */
+            }
+        </style>
+      </head>
+      <body>
+        <h1 style="text-align:center">HTML5 Input Types</h1>
+<div style="border: 3px; border-radius: 2px; border-color: brown;text-align: center; background-color: cadetblue;margin-top: 10%;margin-left: 24%; color: blue;width: 50%; height:50vh">      
+      <form >
+          <label for="date">Date:</label>
+          <input type="date" id="date" name="date" required><br><br>
+      
+          <label for="number">Number:</label>
+          <input type="number" id="number" name="number" required><br><br>
+      
+          <label for="range">Range:</label>
+          <input type="range" id="range" name="range" min="1" max="10" required><br><br>
+      
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required><br><br>
+      
+          <label for="search">Search:</label>
+          <input type="search" id="search" name="search" required><br><br>
+      
+          <label for="datalist">Data List:</label>
+          <input type="text" id="datalist" name="datalist" list="colors">
+          <datalist id="colors">
+            <option value="Red">
+            <option value="Green">
+            <option value="Blue">
+          </datalist><br><br>
+      
+          <input type="submit" value="Submit">
+        </form>
+    </div>
+
+      </body>

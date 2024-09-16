@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Root element of the XML document -->
+<catalog xmlns:bk="http://www.example.org/books">
+
+    <!-- Comment: Start of the first book entry -->
+    <bk:book category="Programming">
+        
+        <!-- Element with text content -->
+        <bk:title>Learning XML</bk:title>
+        <bk:author>John Doe</bk:author>
+        
+        <!-- Attribute and text content -->
+        <bk:year>2024</bk:year>
+        <bk:price currency="USD">39.95</bk:price>
+        
+        <!-- CDATA section to include special characters -->
+        <bk:description><![CDATA[This book covers <XML> basics and advanced topics.]]></bk:description>
+    </bk:book>
+
+    <!-- Comment: Start of the second book entry -->
+    <bk:book category="Web Development">
+        <bk:title>HTML5 &amp; CSS3</bk:title>
+        <bk:author>Jane Doe</bk:author>
+        <bk:year>2023</bk:year>
+        <bk:price currency="USD">29.95</bk:price>
+    </bk:book>
+
+</catalog>

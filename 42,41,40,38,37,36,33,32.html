@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Details Table</title>
+    <style>
+       body{
+        margin: 2px;
+        padding: 2px;
+        background-color: darkcyan;
+       }
+        table {
+            width: 100%;
+            border-collapse: collapse; 
+            margin: 20px 0; 
+        }
+
+        
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        th, td {
+            border: 1px solid #ddd; 
+            padding: 8px;
+            text-align: left;
+        }
+
+        
+        th {
+            background-color: #4CAF50; 
+            color: white;
+        }
+
+        
+        tr:nth-child(even) {
+            background-color:rgb(213, 16, 244); 
+        }
+
+        tr:hover {
+            background-color: rgb(218, 92, 92); 
+        }
+
+       
+        table {
+            background-color: #fff; 
+            border-radius: 8px; 
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto; 
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px; 
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+        }
+
+        h1 {
+            text-align: center;
+            color: #333; 
+        }
+
+        ul {
+            list-style-type: none; 
+            padding: 0;
+        }
+
+        .branch {
+            background-color: #4CAF50; 
+            color: white;
+            padding: 10px;
+            border-radius: 5px; 
+            margin: 10px 0; 
+        }
+
+        .branch ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        .branch ul li {
+            background-color: #b02323; 
+            padding: 8px;
+            border-bottom: 1px solid #ddd; 
+        }
+
+        .branch ul li:last-child {
+            border-bottom: none; 
+        }
+
+        .branch ul li:hover {
+            background-color:black; 
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Student Details Table</caption>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Branch</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Aakash</td>
+                <td>20</td>
+                <td>Computer Science</td>
+                <td>Aakash@example.com</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Shivam</td>
+                <td>22</td>
+                <td>Electrical Engineering</td>
+                <td>Shivam@example.com</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Rahul</td>
+                <td>21</td>
+                <td>Civil Engineering</td>
+                <td>Rahul@example.com</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>stayam</td>
+                <td>23</td>
+                <td>Mechanical Engineering</td>
+                <td>alss@example.com</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Deepak</td>
+                <td>20</td>
+                <td>Csbs</td>
+                <td>deepak@example.com</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Rohan</td>
+                <td>22</td>
+                <td>biotech</td>
+                <td>rohans@example.com</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>Mayank</td>
+                <td>21</td>
+                <td>Civil Engineering</td>
+                <td>Mayank@example.com</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>Sanyam</td>
+                <td>24</td>
+                <td>It</td>
+                <td>sanyam@example.com</td>
+            </tr>
+            
+        </tbody>
+    </table>
+
+    <div class="container">
+        <h1>Subjects by Branch</h1>
+        <div class="branch">
+            <h2>Computer Science</h2>
+            <ul>
+                <li>Data Structures</li>
+                <li>Algorithms</li>
+                <li>Operating Systems</li>
+                <li>Database Systems</li>
+                <li>Computer Networks</li>
+            </ul>
+        </div>
+
+        <div class="branch">
+            <h2>Electrical Engineering</h2>
+            <ul>
+                <li>Circuit Analysis</li>
+                <li>Electromagnetics</li>
+                <li>Signal Processing</li>
+                <li>Control Systems</li>
+                <li>Power Systems</li>
+            </ul>
+        </div>
+
+        <div class="branch">
+            <h2>Civil Engineering</h2>
+            <ul>
+                <li>Structural Analysis</li>
+                <li>Geotechnical Engineering</li>
+                <li>Hydraulics</li>
+                <li>Construction Management</li>
+                <li>Environmental Engineering</li>
+            </ul>
+        </div>
+
+        <div class="branch">
+            <h2>Mechanical Engineering</h2>
+            <ul>
+                <li>Thermodynamics</li>
+                <li>Fluid Mechanics</li>
+                <li>Manufacturing Processes</li>
+                <li>Mechanics of Materials</li>
+                <li>Heat Transfer</li>
+            </ul>
+        </div>
+
+        <div class="branch">
+            <h2>Mathematics</h2>
+            <ul>
+                <li>Calculus</li>
+                <li>Linear Algebra</li>
+                <li>Probability and Statistics</li>
+                <li>Differential Equations</li>
+                <li>Discrete Mathematics</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
+

@@ -1,0 +1,22 @@
+<!DOCTYPE library [
+ 
+  <!ELEMENT library (book+)>
+  <!ELEMENT book (title, author, year)>
+  <!ELEMENT title (#PCDATA)>
+  <!ELEMENT author (#PCDATA)>
+  <!ELEMENT year (#PCDATA)>
+  <!ATTLIST book isbn CDATA #REQUIRED>
+]>
+
+<library>
+  <book isbn="978-0590353403">
+    <title>The Hobbit</title>
+    <author>J.R.R. Tolkien</author>
+    <year>1937</year>
+  </book>
+  <book isbn="978-0061120084">
+    <title>To Kill a Mockingbird</title>
+    <author>Harper Lee</author>
+    <year>1960</year>
+  </book>
+</library>

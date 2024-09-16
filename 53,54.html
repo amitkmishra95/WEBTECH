@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Popup Box</title>
+    <style>
+        body{
+            background-color: yellow;
+        }
+        h1{
+            text-align: center;
+        }
+        #div1{
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>JavaScript Popup Box</h1>
+    <div id="div1">
+        
+
+    <button onclick="showAlert()">Show Alert</button>
+    <button onclick="showConfirm()">Show Confirm</button>
+    <button onclick="showPrompt()">Show Prompt</button>
+
+    </div>
+    <script>
+        
+        function showAlert() {
+            alert("This is an alert box!");
+        }
+
+        
+        function showConfirm() {
+            var result = confirm("Do you want to continue?");
+            if (result) {
+                alert("You clicked OK!");
+            } else {
+                alert("You clicked Cancel!");
+            }
+        }
+
+        
+        function showPrompt() {
+            var name = prompt("Please enter your name:", "John Doe");
+            if (name !== null) {
+                alert("Hello, " + name + "!");
+            }
+        }
+    </script>
+</body>
+</html>

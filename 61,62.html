@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    
+</head>
+<body>
+    <h1>Function</h1>
+    <script>
+        function sum(a,b){
+            return a+b;
+        }
+        const s = sum(5,8);
+    document.writeln(`<h1>sum : ${s}`)
+    </script>
+
+    <h1>Arrow function</h1>
+    <script>
+        const mul = (x,y) => x*y;
+        document.write(`<h1>multiplication : ${mul(2,3)}`);
+    </script>
+
+    
+
+<h1>JS ANONYMOUS OBJECTS</h1>
+<div id="output1"></div>
+<script>
+    const student = {};
+student.name = "Jane";
+student.age = 25;
+//console.log(student2.name);
+//document.write(`welcome : ${student.name} . your age is ${student.age}`);
+document.getElementById("output1").innerHTML += `welcome : ${student.name} . your age is ${student.age}<br>`;
+</script>
+
+<h1>JS OBJECTS</h1>
+<div id="output2"></div>
+    <script>
+        const student = new Object();
+    student.name = "John";
+    student.age = 22;
+    //console.log(student.name);
+   // document.write(`welcome : ${student.name} . your age is ${student.age}`);
+    document.getElementById("output2").innerHTML += `welcome : ${student.name} . your age is ${student.age}<br>`;
+    </script>
+</body>
+</html>

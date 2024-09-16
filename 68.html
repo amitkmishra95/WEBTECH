@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Java Script Class</h1>
+    <script>
+        class person{
+            constructor(name,age){
+                this.name=name;
+                this.age = age;
+        }
+    }
+    const obj1 = new person('Aakash', 25);
+    const obj2 = new person('Shivam', 28);
+    document.writeln(`<h2>Person1 details : <br> name : ${obj1.name} age:  ${obj1.age}<h2>`)
+        document.writeln(`<h2>Person2 details : <br> name : ${obj2.name} age:  ${obj2.age}<h2>`)
+    </script>
+    <hr>
+    <h2>Object constructor</h2>
+    <hr>
+    <script>
+        function person(firstname , lastname , age){
+            this.fname = firstname;
+            this.lname = lastname;
+            this.age = age;
+        }
+        var ans = new person("Satyam" ,"Gupta" , 25);
+        document.write("Name : "+ans.fname+" " + ans.lname+"<br>");
+        document.write("Age : "+ans.age);
+    </script>
+
+</body>
+</html>
